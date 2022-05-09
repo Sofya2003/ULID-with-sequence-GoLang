@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"crypto/rand"
 	"fmt"
-	"new/crockford"
+	"ULID-with-sequence-GoLang/crockford"
 	"strings"
 
 	"os"
@@ -12,10 +12,7 @@ import (
 	"time"
 )
 
-func main() { /*
-		newRandomness, _ := rand.Prime(rand.Reader, 65)
-		n := fmt.Sprintf("%b", newRandomness)
-		fmt.Println(newRandomness, crockford.Encode(n), n)*/
+func main() {
 	fmt.Print("Please enter test duration in seconds: ")
 	myScanner := bufio.NewScanner(os.Stdin)
 	myScanner.Scan()
